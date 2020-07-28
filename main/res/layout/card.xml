@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_graha"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/suryan" />
+
+    <LinearLayout
+        android:id="@+id/slokaSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_graha"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_ta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_graha"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/iv_graha"
+            android:layout_below="@+id/iv_graha"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="25dp"
+            android:text="tam" />
+
+        <TextView
+            android:id="@+id/tv_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_ta"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/tv_ta"
+            android:layout_below="@+id/tv_ta"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="25dp"
+            android:text="eng" />
+
+    </LinearLayout>
+</RelativeLayout>
